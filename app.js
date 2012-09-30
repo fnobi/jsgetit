@@ -1,5 +1,4 @@
-var request   = require("request"),
-    commander = require("commander"),
+var commander = require("commander"),
     JSGetIt   = require(__dirname + "/lib/JSGetIt");
 
 // コマンドライン引数読み込み

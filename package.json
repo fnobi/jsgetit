@@ -1,0 +1,14 @@
+{
+	"name": "jsgetit",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app"
+	},
+	"dependencies": {
+		"commander" : "1.0.4",
+		"request" : "2.11.4",
+		"mkdirp" : "0.3.4",
+		"jsdom" : "0.2.15"
+	}
+}
