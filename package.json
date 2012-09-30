@@ -8,7 +8,9 @@
 	"dependencies": {
 		"commander" : "1.0.4",
 		"request" : "2.11.4",
+		"async" : "0.1.22",
 		"mkdirp" : "0.3.4",
+		"underscore" : "1.4.0",
 		"jsdom" : "0.2.15"
 	}
 }
