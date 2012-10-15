@@ -3,8 +3,9 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"start": "node app"
+		"start": "./bin/jsgetit"
 	},
+	"bin": "./bin/jsgetit",
 	"dependencies": {
 		"commander" : "1.0.4",
 		"request" : "2.11.4",

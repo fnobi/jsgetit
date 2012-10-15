@@ -1,17 +1,16 @@
 #!/usr/bin/env node
 
 var commander = require('commander'),
-    JSGetIt   = require(__dirname + '/lib/JSGetIt');
+    JSGetIt   = require(__dirname + '/../');
 
 // コマンドライン引数読み込み
 commander
-	.version('0.0.1')
+	// .version('0.0.1')
 	.option('-o, --output [path]', 'output path')
+	.option('-a, --app', 'as .app file (with macgap)')
 	.parse(process.argv);
 
 
-// 変数宣言
-var jsGetIt;
 var codename = commander.args.shift();
 
 // 引数無しならエラー終了
@@ -20,12 +19,5 @@ if (!codename) {
 	process.exit();
 }
 
-if (codename.match(/^(http:\/\/js(do|run).it\/)?([^\/]+)\/([^\/]+)$/)) {
-	jsGetIt = new JSGetIt(RegExp.$2, RegExp.$3);
-} else {
-	console.error('? is invalid.', codename);
-	process.exit();
-}
-
-// ダウンロード
+var jsGetIt = new JSGetIt(codename);
 jsGetIt.download();
