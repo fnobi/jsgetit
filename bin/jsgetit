@@ -11,13 +11,13 @@ commander
 	.parse(process.argv);
 
 
-var codename = commander.args.shift();
+var url = commander.args.shift();
 
 // 引数無しならエラー終了
-if (!codename) {
-	console.error('enter username and codename.');
+if (!url) {
+	console.error('enter a jsdoit url or path.');
 	process.exit();
 }
 
-var jsGetIt = new JSGetIt(codename);
+var jsGetIt = new JSGetIt(url);
 jsGetIt.download();
