@@ -3,18 +3,17 @@ jsgetit
 
 download jsdo.it code as project.
 
-# install
+# to install
 ```
-git clone https://github.com/fnobi/jsgetit.git
 npm install -g jsgetit
 ```
 
-# use
+# to use
 ```
 jsgetit fnobi/wachase
 ```
 
-# build as .app
+# to build as .app
 ```
 macgap build wachase
 ```
